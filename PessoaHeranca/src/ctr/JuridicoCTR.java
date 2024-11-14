@@ -7,6 +7,6 @@ public class JuridicoCTR {
     JuridicoDAO juridicoDAO = new JuridicoDAO();
 
     public String mostrarDadosJur(JuridicoDTO juridico) {
-        return juridicoDAO.mostrarDadosJur(juridico);
+        return juridicoDAO.mostrarDadosCli(juridico);
     }
 }

@@ -2,13 +2,12 @@ package dao;
 
 import dto.FisicoDTO;
 
-public class FisicoDAO {
+public class FisicoDAO extends ClienteDAO {
 
-    ClienteDAO cliente = new ClienteDAO();
 
-    public String mostrarDadosFis(FisicoDTO fisico) {
+    public String mostrarDadosCli(FisicoDTO fisico) {
         return
-                cliente.mostrarDadosCli(fisico) +
+                super.mostrarDadosCli(fisico) +
                 "\nCPF: " + fisico.getCpf() +
                 "\nRG: " + fisico.getRg();
     }

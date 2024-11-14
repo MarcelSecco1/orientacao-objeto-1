@@ -7,6 +7,6 @@ public class FisicoCTR {
     FisicoDAO fisicoDAO = new FisicoDAO();
 
     public String mostrarDadosFis(FisicoDTO fisico) {
-        return fisicoDAO.mostrarDadosFis(fisico);
+        return fisicoDAO.mostrarDadosCli(fisico);
     }
 }

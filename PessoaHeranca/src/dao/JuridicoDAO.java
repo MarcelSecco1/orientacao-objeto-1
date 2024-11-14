@@ -2,12 +2,11 @@ package dao;
 
 import dto.JuridicoDTO;
 
-public class JuridicoDAO {
-    ClienteDAO cliente = new ClienteDAO();
+public class JuridicoDAO extends ClienteDAO {
 
-    public String mostrarDadosJur(JuridicoDTO juridico) {
+    public String mostrarDadosCli(JuridicoDTO juridico)  {
         return
-                cliente.mostrarDadosCli(juridico) +
+                super.mostrarDadosCli(juridico) +
                 "\nCNPJ: " + juridico.getCnpj() +
                 "\nIE: " + juridico.getIe();
     }
